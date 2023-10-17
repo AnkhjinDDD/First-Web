@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
+    <link rel="shortcut icon" href="img/youtube.png" type="image/png" />
     <link rel="stylesheet" href="youtube.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,215 +14,271 @@
     />
   </head>
   <body>
-    <div class="main">
-      <div class="upside">
+    <header>
+      <nav>
         <div class="upside-left">
-          <img id="menu" src="/First-Web/assets/svg/YouTube/menu.svg" alt="" />
-          <img id="youtube" src="/First-Web/assets/svg/YouTube/youtube.svg" alt="" />
+          <button id="menu">
+            <img src="svg/menu.svg" alt="" />
+          </button>
+          <a href="youtube.html" id="youtube">
+            <img src="svg/youtube.svg" alt="" />
+          </a>
         </div>
         <div class="search">
           <div class="search-1">
-            <input type="text" id="searchbar" />
+              <input id="searchbar" type="text" />
             <button id="searchbutton">
               <img
                 id="search-image"
-                src="/First-Web/assets/svg/YouTube/search.svg"
+                src="svg/search.svg"
                 alt=""
               />
             </button>
           </div>
           <button id="mic">
-            <img src="/First-Web/assets/svg/YouTube/mic.svg" alt="" />
+            <img src="svg/mic.svg" alt="" />
           </button>
         </div>
         <div class="sign-in">
-          <img src="/First-Web/assets/svg/YouTube/threeDots.svg" id="three-dots" alt="" />
+          <img src="svg/threeDots.svg" id="three-dots" alt="" title="Settings" />
           <a href=""
             ><img
-              src="/First-Web/assets/svg/YouTube/account.svg"
+              src="svg/account.svg"
               id="sign-in-image"
               alt=""
             />
             <p>Sign in</p></a
           >
-        </div>
-      </div>
-      <div class="downside">
-        <div class="menu">
+      </nav>
+    </header>
+    <main>
+      <div class="menu">
+        <div class="menu1">
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/home.svg" alt="" />
+            ><img src="svg/home.svg" alt="" />
             <p>Home</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/shorts.svg" alt="" />
+            ><img src="svg/shorts.svg" alt="" />
             <p>Shorts</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/subscriptions.svg" alt="" />
+            ><img src="svg/subscriptions.svg" alt="" />
             <p>Subscriptions</p></a
           >
-          <hr />
+        </div>
+        <div class="menu2">
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/library.svg" alt="" />
+            ><img src="svg/library.svg" alt="" />
             <p>Library</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/history.svg" alt="" />
+            ><img src="history.svg" alt="" />
             <p>History</p></a
           >
-          <hr />
+        </div>
+        <div class="menu3">
           <h2>Explore</h2>
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/trending.svg" alt="" />
+            ><img src="svg/trending.svg" alt="" />
             <p>Trending</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/music.svg" alt="" />
+            ><img src="svg/music.svg" alt="" />
             <p>Music</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/live.svg" alt="" />
+            ><img src="svg/live.svg" alt="" />
             <p>Live</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/gaming.svg" alt="" />
+            ><img src="svg/gaming.svg" alt="" />
             <p>Gaming</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/news.svg" alt="" />
+            ><img src="svg/news.svg" alt="" />
             <p>News</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/sports.svg" alt="" />
+            ><img src="svg/sports.svg" alt="" />
             <p>Sports</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/learning.svg" alt="" />
+            ><img src="svg/learning.svg" alt="" />
             <p>Learning</p></a
           >
           <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/fashion.svg" alt="" />
+            ><img src="svg/fashion.svg" alt="" />
             <p>Fashion & Beauty</p></a
           >
-          <hr />
-          <a href=""
-            ><img src="/First-Web/assets/svg/YouTube/browse.svg" alt="" />
-            <p>Browse channels</p></a
-          >
         </div>
-        <div class="downside-right">
-          <div class="categories">
-            <a href="">All</a>
-            <a href="">Music</a>
-            <a href="">Live</a>
-            <a href="">Gaming</a>
-            <a href="">Alan Walker</a>
-            <a href="">Playlists</a>
-            <a href="">Chill-out Music</a>
-            <a href="">Meditation Music</a>
-            <a href="">Dubbing</a>
-            <a href="">Comedy</a>
+        <a href="" id="browsechannels"
+          ><img src="svg/browse.svg" alt="" />
+          <p>Browse channels</p></a
+        >
+        <br>
+      </div>
+      <div class="downside-right">
+        <div class="categories">
+          <a href="">All</a>
+          <a href="">Music</a>
+          <a href="">Live</a>
+          <a href="">Gaming</a>
+          <a href="">Alan Walker</a>
+          <a href="">Playlists</a>
+          <a href="">Chill-out Music</a>
+          <a href="">Meditation Music</a>
+          <a href="">Dubbing</a>
+          <a href="">Comedy</a>
+        </div>
+        <div class="videos">
+          <div class="vid">
+            <a href=""
+              ><img
+                src="http://unsplash.it/332/199"
+                id="vid"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video 1</p>
+                  <p>Channel name</p>
+                </div>
+              </div>
+            </a>
           </div>
-          <div class="videos">
-            <div class="vid">
-              <a href=""
-                ><img
-                  src="/First-Web/assets/img/thumbnails/0cQDizYOGeA-HD.jpg"
-                  id="vid"
-                  alt=""
-                />
-                <div class="vide">
-                  <img src="/First-Web/assets/img/youtube channel 1.png" alt="" />
-                  <div class="description">
-                    <p>Video 1</p>
-                    <p>Channel name</p>
-                  </div>
+          <div class="vid">
+            <a href=""
+              ><img
+              src="http://unsplash.it/332/199"
+                id="vid"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video 2</p>
+                  <p>Channel name</p>
                 </div>
-              </a>
-            </div>
-            <div class="vid">
-              <a href=""
-                ><img
-                  src="/First-Web/assets/img/thumbnails/E7BPiXD1giE-HD.jpg"
-                  id="vid"
-                  alt=""
-                />
-                <div class="vide">
-                  <img src="/First-Web/assets/img/youtube channel 2.png" alt="" />
-                  <div class="description">
-                    <p>Video 2</p>
-                    <p>Channel name</p>
-                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="vid">
+            <a href=""
+              ><img
+                id="vid"
+                src="http://unsplash.it/332/199"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video 3</p>
+                  <p>Channel name</p>
                 </div>
-              </a>
-            </div>
-            <div class="vid">
-              <a href=""
-                ><img
-                  id="vid"
-                  src="/First-Web/assets/img/thumbnails/h5cnA2CqRJs-HD.jpg"
-                  alt=""
-                />
-                <div class="vide">
-                  <img src="/First-Web/assets/img/youtube channel 3.png" alt="" />
-                  <div class="description">
-                    <p>Video 3</p>
-                    <p>Channel name</p>
-                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="vid">
+            <a href=""
+              ><img
+                id="vid"
+                src="http://unsplash.it/332/199"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video 4</p>
+                  <p>Channel name</p>
                 </div>
-              </a>
-            </div>
-            <div class="vid">
-              <a href=""
-                ><img
-                  id="vid"
-                  src="/First-Web/assets/img/thumbnails/i9GwIel5qXw-HD.jpg"
-                  alt=""
-                />
-                <div class="vide">
-                  <img src="/First-Web/assets/img/youtube channel 4.png" alt="" />
-                  <div class="description">
-                    <p>Video 4</p>
-                    <p>Channel name</p>
-                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="vid">
+            <a href=""
+              ><img
+                id="vid"
+                src="http://unsplash.it/332/199"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video5</p>
+                  <p>Channel name</p>
                 </div>
-              </a>
-            </div>
-            <div class="vid">
-              <a href=""
-                ><img
-                  id="vid"
-                  src="/First-Web/assets/img/thumbnails/s-V50snKn-0-HD.jpg"
-                  alt=""
-                />
-                <div class="vide">
-                  <img src="/First-Web/assets/img/youtube channel 5.png" alt="" />
-                  <div class="description">
-                    <p>Video5</p>
-                    <p>Channel name</p>
-                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="vid">
+            <a href=""
+              ><img
+                id="vid"
+                src="http://unsplash.it/332/199"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video 6</p>
+                  <p>Channel name</p>
                 </div>
-              </a>
-            </div>
-            <div class="vid">
-              <a href=""
-                ><img
-                  id="vid"
-                  src="/First-Web/assets/img/thumbnails/SsTDfGwKNUE-HD.jpg"
-                  alt=""
-                />
-                <div class="vide">
-                  <img src="/First-Web/assets/img/youtube channel 6.png" alt="" />
-                  <div class="description">
-                    <p>Video 6</p>
-                    <p>Channel name</p>
-                  </div>
+              </div>
+            </a>
+          </div>
+          <div class="vid">
+            <a href=""
+              ><img
+                id="vid"
+                src="http://unsplash.it/332/199"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video 6</p>
+                  <p>Channel name</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
+          <div class="vid">
+            <a href=""
+              ><img
+                id="vid"
+                src="http://unsplash.it/332/199"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video 6</p>
+                  <p>Channel name</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="vid">
+            <a href=""
+              ><img
+                id="vid"
+                src="http://unsplash.it/332/199"
+                alt=""
+              />
+              <div class="vide">
+                <img src="http://unsplash.it/36/36" alt="" />
+                <div class="description">
+                  <p>Video 6</p>
+                  <p>Channel name</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </main>
+    <footer></footer>
   </body>
 </html>
