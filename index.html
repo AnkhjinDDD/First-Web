@@ -4,46 +4,177 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="codes/Intro Web Page/intro.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
     <title>Ankhjin</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to my first Web Page!</h1>
+      <h1>Ankhjin</h1>
       <nav>
-        <a href="index.html"> Home</a>
-        <a href="codes/Intro Web Page/hobby.html">My Hobbies</a>
-        <a href="codes/Intro Web Page/My Weekly Plan.html">My Weekly Plan</a>
-        <a href="codes/Intro Web Page/My Projects.html">My Projects</a>
+        <a href="#home" class="hvr-underline-from-center">Home</a>
+        <a href="#about" class="hvr-underline-from-left">About me</a>
+        <a href="#works" class="hvr-underline-from-right">Works</a>
+        <a href="#contacts" class="hvr-underline-from-left">Contacts</a>
       </nav>
     </header>
     <main>
-      <span>
-        <h2>Hello, I'm Ankhjin. Nice to meet you!</h2>
-        <h2>About me:</h2>
-        <ul>
-          <li>Last Name: Dulguun</li>
-          <li>Age: 18</li>
-          <li>Nationality: Mongolian</li>
-          <li>Favourite subject: Math</li>
-          <li>Favourite food: Pizza</li>
-          <li>Favourite color: Blue, Red</li>
-          <li>Interesting Facts: None</li>
-        </ul>
-      </span>
+      <div id="home">
+        <div class="texts">
+          <span id="welcome">Welcome to my Web Page!</span>
+          <span class="name"
+            >My name is
+            <p>Ankhjin</p></span
+          >
+          <div class="intro">
+            <h1>
+              <span>I like</span>
+              <div class="message">
+                <div class="word-code">Web Dev.</div>
+                <div class="word">coding</div>
+                <div class="word">Gaming</div>
+              </div>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <h2><span class="path">/</span>about me</h2>
+        <hr />
+        <p class="hello1">Who am I?</p>
+        <div class="introduction">
+          <div class="hello-container">
+            <p class="hello2">Nice to Meet you!</p>
+            <p>
+              I am Ankhjin , an 18 year-old, who just graduated high-school in
+              june 2023. Currently, i am learning to develop websites.
+            </p>
+          </div>
+        </div>
+        <h2><span class="path">#</span>my skills</h2>
+        <hr />
+        <p class="hello1">Languages:</p>
+        <div class="skills">
+          <p>
+            <img
+              src="assets/svg/html.svg"
+              width="50px"
+              height="50px"
+              alt=""
+            />HTML
+          </p>
+          <p>
+            <img
+              src="assets/svg/css.svg"
+              width="50px"
+              height="50px"
+              alt=""
+            />CSS
+          </p>
+        </div>
+        <h2><span class="path">#</span>my hobbies</h2>
+        <hr />
+        <div class="hobbies">
+          <div class="hobby-container" data-aos="flip-up">
+            <img
+              class="hobby-img"
+              src="assets/img/hobby/movie.png"
+              alt="movies"
+            />
+            <div class="hobby-desc">
+              <div class="hobby-header">Movies</div>
+              <p>
+                I love watching all kinds of movies, like films, TV Shows,
+                anime. Here are a few of my favourites: "Friends" (TV Show),
+                "The Big Bang Theory" (TV Show), "Fight Club", "Training Day",
+                "Jojo's Bizarre Adventure", "Death Note", etc.
+              </p>
+            </div>
+          </div>
+          <div class="hobby-container" data-aos="zoom-in-right">
+            <div class="hobby-desc">
+              <div class="hobby-header">Video Games</div>
+              <p>
+                I also enjoy playing all kinds of video games. Here are a few of
+                my favourites: Grand Theft Auto: series, Minecraft, Roblox,
+                Counter-Strike, Valorant, Forza, etc.
+              </p>
+            </div>
+            <img class="hobby-img" src="assets/img/hobby/game.png" alt="" />
+          </div>
+          <div class="hobby-container" data-aos="fade-left">
+            <img
+              class="hobby-img"
+              src="assets/img/hobby/music.png"
+              alt="basketball"
+            />
+            <div class="hobby-desc">
+              <div class="hobby-header">Music</div>
+              <p>
+                Music is truly a big part of my life. I listen to music almost
+                every day, because it helps me to relax. Plus, i really love
+                singing along with my favourite songs. And here are a few of my
+                favourite artists of all time: Michael Jackson, Elvis Presley,
+                America, The Beatles, The Smiths, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="works">
+        <h2><span class="path">/</span>works</h2>
+        <hr />
+        <div class="work-container">
+          <div class="work-card">
+            <img src="assets/svg/youtube.svg" class="work-img" alt="" />
+            <p class="languages">HTML, CSS</p>
+            <p class="work-header">Youtube copy</p>
+            <a class="visit" href="codes/youtube/youtube.html" target="_blank"
+              ><p>visit</p>
+              <img src="assets/svg/ExternalLink.svg" alt="" width="20px"
+            /></a>
+          </div>
+          <div class="work-card">
+            <img src="assets/svg/facebook.svg" class="work-img" alt="" />
+            <p class="languages">HTML, CSS</p>
+            <p class="work-header">Facebook copy</p>
+            <a class="visit" href="codes/facebook/facebook.html" target="_blank"
+              ><p>visit</p>
+              <img src="assets/svg/ExternalLink.svg" alt="" width="20px"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div id="contacts">
+        <h2><span class="path">/</span>contacts</h2>
+        <hr />
+        <div class="socials">
+          <a href="mailto:ankhjin8021@gmail.com" class="hvr-float-shadow">
+            <img src="assets/svg/gmail.svg" alt="" width="60px" />
+          </a>
+          <a
+            href="https://www.facebook.com/holyre123/"
+            class="hvr-float-shadow"
+            target="_blank"
+          >
+            <img src="assets/svg/facebook-logo.svg" alt="" width="60px" />
+          </a>
+          <a
+            href="https://github.com/AnkhjinDDD"
+            class="hvr-float-shadow"
+            target="_blank"
+          >
+            <img src="assets/svg/github.svg" alt="" width="60px" />
+          </a>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2022. Made by Elias</p>
+        </div>
+      </div>
     </main>
-    <footer>
-      <h1>Contact Info:</h1>
-      <p>Phone Number: (+976) 99138021</p>
-      <p>E-mail: ankhjin8021@gmail.com</p>
-      <p>
-        Facebook:
-        <a href="https://www.facebook.com/holyre123/" target="_blank"
-          >Ankhjin Dulguun</a
-        >
-      </p>
-      <p>Address: Ulaanbaatar, Sukhbaatar</p>
-      <p>&copy; 2023 My Personal Page.</p>
-      <br /><br /><br /><br /><br /><br /><br />
-    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
