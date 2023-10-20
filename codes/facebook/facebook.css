@@ -12,6 +12,17 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: rgb(240, 240, 240);
 }
+html {
+  width: calc(100vw - 8px);
+}
+main {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 header {
   position: fixed;
   top: 0;
@@ -42,21 +53,26 @@ header {
   background-color: rgb(235, 235, 235);
   color: black;
   border: 0;
-  border-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   height: 40px;
   font-size: 16px;
+  padding-right: 10px;
   flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.upper-left p img {
-  width: 20px;
+#search {
+  width: 40px;
   height: 40px;
-  margin: 0 10px;
+  padding: 0 10px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: rgb(235, 235, 235);
 }
 .buttons {
-  width: 650px;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -86,8 +102,9 @@ header {
   height: 20px;
 }
 .upper-right {
-  width: 20%;
+  width: auto;
   height: 100%;
+  margin-right: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -116,7 +133,7 @@ header {
   border-radius: 100px;
 }
 .menu {
-  width: 25%;
+  width: 20vw;
   height: calc(100vh - 56px);
   position: fixed;
   top: 56px;
@@ -130,7 +147,7 @@ header {
   overflow-y: scroll;
 }
 .menu a {
-  width: 344px;
+  width: 90%;
   height: 48px;
   border-radius: 10px;
   display: flex;
@@ -168,42 +185,46 @@ header {
 }
 .feed {
   margin-top: 80px;
-  margin-left: 420px;
-  width: 680px;
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 .stories {
-  width: 590px;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .story {
-  flex: 1;
+  width: 24%;
   text-align: center;
   position: relative;
 }
 .story p {
   color: white;
+  font-weight: bold;
   position: absolute;
-  top: 200px;
-  left: 20px;
+  top: 80%;
+  left: 10%;
 }
 .story1 {
-  flex: 1;
+  width: 24%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .story-img1 {
+  width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 .story-img {
+  width: 100%;
+  height: 100%;
+  flex: 1;
   border-radius: 10px;
 }
 .story-img-user {
@@ -212,20 +233,21 @@ header {
   position: absolute;
   width: 36px;
   height: 36px;
-  top: 15px;
-  left: 15px;
+  top: 5%;
+  left: 10%;
 }
 
 .create-story {
   width: 40px;
   height: 40px;
   background-color: white;
+  flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 180px;
-  left: 55px;
+  margin-top: 130%;
   border-radius: 100px;
 }
 #create-story-img {
@@ -233,23 +255,26 @@ header {
   height: 32px;
 }
 .create-story-p {
-  width: 140px;
+  width: 100%;
   background-color: white;
   text-align: center;
-  height: 50px;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 .create-story-p p {
   margin-top: 25px;
   margin-bottom: 0;
+  width: 80%;
 }
 
 .create-post {
   background-color: white;
-  width: 590px;
+  width: 100%;
   margin-top: 20px;
   padding-top: 10px;
   border-radius: 10px;
@@ -268,6 +293,9 @@ header {
 .create-post-upside p {
   background-color: rgb(230, 230, 230);
   flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   padding: 10px;
   border-radius: 20px;
   color: rgb(100, 100, 100);
@@ -313,7 +341,7 @@ header {
 }
 
 .post1 {
-  width: 590px;
+  width: 100%;
   background-color: white;
   margin-top: 20px;
   border-radius: 10px;
@@ -345,7 +373,7 @@ header {
   font-size: 20px;
 }
 .post1-upside-right {
-  width: 15%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -353,7 +381,8 @@ header {
 }
 #three-dots {
   width: 45px;
-  height: 45px;
+  height: 100%;
+  flex: 1;
   padding: 10px;
   border-radius: 100px;
 }
@@ -362,7 +391,8 @@ header {
 }
 #ex {
   width: 45px;
-  height: 45px;
+  height: 100%;
+  flex: 1;
   padding: 10px;
   border-radius: 100px;
 }
@@ -372,15 +402,18 @@ header {
 #title {
   width: 95%;
   margin: 0;
+  margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 20px;
+  text-align: start;
 }
 .post1-img {
   width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .post1-img img {
   flex: 3;
@@ -396,8 +429,9 @@ header {
 .right-side {
   position: fixed;
   top: 80px;
-  right: 5px;
-  width: 20%;
+  right: 10px;
+  margin-left: 10px;
+  width: 20vw;
 }
 .contacts {
   display: flex;
@@ -437,7 +471,7 @@ header {
   height: 35px;
   padding: 5px;
   border-radius: 100px;
-  margin-left: 120px;
+  margin-left: auto;
 }
 #contacts-search:hover {
   background-color: rgb(190, 190, 190);
@@ -459,7 +493,7 @@ header {
   justify-content: space-between;
 }
 .like-com-share a {
-  width: 30%;
+  width: 32%;
   height: 40px;
   border-radius: 10px;
   margin-top: 10px;
@@ -477,4 +511,96 @@ header {
   width: 30px;
   height: 30px;
   margin-right: 5px;
+}
+.downside {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .upper-left p {
+    display: none;
+  }
+  #search {
+    border-radius: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .menu {
+    display: none;
+  }
+  .right-side {
+    display: none;
+  }
+  .feed {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .buttons {
+    display: none;
+  }
+  .feed {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .stories {
+    background-color: white;
+    width: 100vw;
+    padding: 5px 10px;
+  }
+  .story {
+    width: 24%;
+  }
+  .story1 {
+    width: 23%;
+  }
+  .create-post {
+    width: 100%;
+    border-radius: 0;
+  }
+  .post1 {
+    border-radius: 0;
+  }
+  .post1-upside {
+    margin-top: 0;
+  }
+  .live-video p,
+  .photo-video p,
+  .feeling-activity p {
+    display: none;
+  }
+  .create-post-downside {
+    margin: 10px 0;
+  }
+  .downside {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+  }
+  .downside a {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
+  .downside a:hover {
+    background-color: rgb(200, 200, 200);
+  }
+  .downside a img {
+    width: 30px;
+    height: 30px;
+  }
+  #downside-videos {
+    width: 25px;
+    height: 25px;
+  }
 }
